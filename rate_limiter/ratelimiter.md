@@ -1,5 +1,14 @@
 # Rate Limiter
 
+## 1. Background & Concepts
+Rate Limiter is a strategy used to limit the incoming traffic to a server. Usually, we would like to set an upper limit of how many requests per second the server can handle, as our computing resources are limited.
+
+Rate limiting can be of different type:
+* per api
+* per server instance
+
+Rate limiter's QPS usually depends on the server capacity as well as the use case of the api.
+## 2. Code Demo
 ```
 Require: redis, fastapi,yaml
 ```
